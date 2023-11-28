@@ -1,0 +1,19 @@
+[gd_scene load_steps=3 format=3 uid="uid://crvs4pncx6ccv"]
+
+[ext_resource type="Texture2D" uid="uid://dyj3hoefixbru" path="res://maps/RDT_20210721_1357001304305020805894802.jpg" id="1_vsr8m"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_omlpx"]
+size = Vector2(1009, 203)
+
+[node name="Level1" type="Node2D"]
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+position = Vector2(0, 186)
+
+[node name="Rdt202107211357001304305020805894802" type="Sprite2D" parent="StaticBody2D"]
+scale = Vector2(1.39889, 0.298189)
+texture = ExtResource("1_vsr8m")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(-0.5, 0.5)
+shape = SubResource("RectangleShape2D_omlpx")
